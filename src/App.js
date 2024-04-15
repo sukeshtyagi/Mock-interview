@@ -1,23 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { useState, useEffect } from "react";
 
 function App() {
+  const [todo, setTodo] = useState("");
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    if (todo === "") {
+      setShow(false);
+    }
+  }, [todo]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      className="toDoApp"
+      style={{
+        margin: "15px",
+      }}
+    >
+      <input
+        type="text"
+        value={todo}
+        onChange={(e) => {
+          setTodo(e.target.value);
+        }}
+        onClick={() => {
+          setTodo("");
+        }}
+      />
+      <br />
+      <br />
+      <button
+        onClick={() => {
+          setShow(true);
+        }}
+      >
+        Add
+      </button>
+      <p>{show && todo}</p>
     </div>
   );
 }

@@ -4,4 +4,4 @@ function foo() {
 
 foo()
 
-console.log(x)
+console.log(typeof(x))

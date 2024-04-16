@@ -27,15 +27,18 @@ for (let index =1; index <3; index++) {
 }
 */
 
+//resolve a promise by retrunign a vale and
+//reject it by throwing an error
+//pending by returnina  a new promsie
+
+/*
 async function foo() {
   return "hello world";
 }
 const result = foo();
 result.then((res) => console.log(res));
 
-//resolve a promise by retrunign a vale and
-//reject it by throwing an error
-//pending by returnina  a new promsie
+
 
 async function foo() {
   throw new Error("hello");
@@ -48,3 +51,17 @@ async function foo() {
 }
 const res1 = foo();
 console.log(res1)
+*/
+
+const user1={
+  name:"john"
+}
+
+const user2={
+  name:"john"
+}
+
+user2.name="ramesh"
+
+console.log(user1)
+console.log(user2)

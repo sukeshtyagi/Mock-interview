@@ -1,8 +1,8 @@
 function foo() {
+  console.log((x))
    x=10
 }
 
 foo()
 
-console.log((x))
 console.log(typeof(x))

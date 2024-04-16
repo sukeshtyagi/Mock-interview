@@ -7,6 +7,7 @@ foo()
 
 console.log(typeof(x))*/
 
+/*
 foo();
 var foo = 20;
 
@@ -15,3 +16,12 @@ function foo() {
 }
 
 foo();
+*/
+
+
+for (let index =1; index <3; index++) {
+  setTimeout(() => {
+    console.log(index)
+  }, 1000);
+  
+}

@@ -53,6 +53,7 @@ const res1 = foo();
 console.log(res1)
 */
 
+/*
 const user1={
   name:"john"
 }
@@ -65,3 +66,10 @@ user2.name="ramesh"
 
 console.log(user1)
 console.log(user2)
+*/
+
+function abc() {
+  console.log("abc")
+}
+const value=new abc()
+console.log(value)

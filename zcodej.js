@@ -1,7 +1,8 @@
 function foo() {
-  var x=10
+   x=10
 }
 
 foo()
 
+console.log((x))
 console.log(typeof(x))

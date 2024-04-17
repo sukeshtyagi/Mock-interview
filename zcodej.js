@@ -68,8 +68,14 @@ console.log(user1)
 console.log(user2)
 */
 
+/*
 function abc() {
   console.log("abc")
 }
 const value=new abc()
 console.log(value)
+*/
+
+console.log(a);
+console.log(b);
+var a=b=5

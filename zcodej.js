@@ -76,6 +76,14 @@ const value=new abc()
 console.log(value)
 */
 
+/*
 console.log(a);
 console.log(b);
 var a=b=5
+*/
+
+const foo=()=>{
+  console.log(this.name)
+}
+
+foo({name:"john"})

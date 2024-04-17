@@ -82,7 +82,7 @@ console.log(b);
 var a=b=5
 */
 
-const foo=()=>{
+function foo(){
   console.log(this.name)
 }
 

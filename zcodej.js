@@ -101,7 +101,7 @@ const foo = () => {
 foo();
 */
 
-{
+function abc() {
   let a = 1;
   let b = 2;
   var c = 3;
@@ -109,6 +109,7 @@ foo();
   console.log(a);
   console.log(b);
 }
+abc()
 console.log(c);
 console.log(a);
 console.log(b);

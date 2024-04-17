@@ -82,8 +82,33 @@ console.log(b);
 var a=b=5
 */
 
+/*
 function foo(){
   console.log(this.name)
 }
 
 foo({name:"john"})
+*/
+
+/*
+const foo = () => {
+  console.log(this.name);
+  const bar = () => {
+    console.log(this.name);
+  };
+  bar();
+};
+foo();
+*/
+
+{
+  let a = 1;
+  let b = 2;
+  var c = 3;
+  console.log(c);
+  console.log(a);
+  console.log(b);
+}
+console.log(c);
+console.log(a);
+console.log(b);

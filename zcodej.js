@@ -101,15 +101,29 @@ const foo = () => {
 foo();
 */
 
+/*
 function abc() {
   let a = 1;
   let b = 2;
-  var c = 3;
+   c = 3;
   console.log(c);
-  console.log(a);
   console.log(b);
+  console.log(a);
 }
 abc()
-console.log(c);
-console.log(a);
-console.log(b);
+console.log(0123)
+*/
+
+/*
+foo()
+var foo=20
+function foo() {
+  console.log('calling foo')
+}
+foo()
+*/
+
+const abc={
+  "user-name":10
+}
+console.log(abc)

@@ -129,7 +129,20 @@ const abc={
 }
 console.log(abc)
 */
-
+/*
 let a = null;
 console.log(typeof a);
 console.log(typeof undefined);
+*/
+
+console.log([1,2]==[1,2])
+
+const numbers=[0,1,2,3,4,5]
+numbers.push(6)
+console.log(numbers)
+
+numbers.unshift([1,2,3,])
+console.log(numbers)
+
+numbers.shift()
+console.log(numbers)

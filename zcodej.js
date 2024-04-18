@@ -123,7 +123,13 @@ function foo() {
 foo()
 */
 
+/*
 const abc={
   "user-name":10
 }
 console.log(abc)
+*/
+
+let a = null;
+console.log(typeof a);
+console.log(typeof undefined);

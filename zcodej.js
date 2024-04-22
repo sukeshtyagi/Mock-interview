@@ -162,6 +162,8 @@ console.log(b);
 
 const arr=[1,2,3]
 arr[4]=5
-console.log(arr[3])
+console.log(arr[30])
+let a=arr.indexOf(30)
+console.log(a)
 
 

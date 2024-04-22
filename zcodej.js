@@ -135,6 +135,7 @@ console.log(typeof a);
 console.log(typeof undefined);
 */
 
+/*
 console.log([1,2]==[1,2])
 
 const numbers=[0,1,2,3,4,5]
@@ -146,3 +147,19 @@ console.log(numbers)
 
 numbers.shift()
 console.log(numbers)
+*/
+
+/*{
+  let a = 1;
+  let b = 2;
+  console.log(a);
+  console.log(b);
+}
+console.log(a);
+console.log(b);
+*/
+
+
+const arr=[1,2,3]
+arr[4]=5
+console.log(arr)

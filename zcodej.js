@@ -159,11 +159,58 @@ console.log(a);
 console.log(b);
 */
 
-
+/*
 const arr=[1,2,3]
 arr[4]=5
 console.log(arr[30])
-let a=arr.indexOf(30)
+let a=arr.indexOf(3)
 console.log(a)
+*/
 
+/*
+var a = 10;
+function foo() {
+  console.log(a);
+  var a = 5;
+}
+foo();
 
+const arr = [1, 2, 3, 4];
+const abc = [...arr];
+
+console.log(abc);
+*/
+
+//counter app
+
+const addBtn = document.getElementById("add");
+addBtn.onclick = increase;
+
+const substract = document.getElementById("substract");
+substract.onclick = decrease;
+
+function increase() {
+  const countEl = document.getElementById("count");
+  let count = parseInt(countEl.innerText);
+  console.log(count);
+
+  count = count + 1;
+  console.log(count);
+
+  countEl.innerHTML = count;
+  console.log(countEl);
+}
+
+function decrease() {
+  const countEl = document.getElementById("count");
+  let count = parseInt(countEl.innerText);
+  console.log(count);
+
+  if (count > 0) {
+    count = count - 1;
+    console.log(count);
+
+    countEl.innerHTML = count;
+    console.log(countEl);
+  }
+}

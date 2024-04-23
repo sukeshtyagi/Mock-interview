@@ -183,7 +183,7 @@ console.log(abc);
 
 //counter app
 
-const addBtn = document.getElementById("add");
+/*const addBtn = document.getElementById("add");
 addBtn.onclick = increase;
 
 const substract = document.getElementById("substract");
@@ -214,3 +214,80 @@ function decrease() {
     console.log(countEl);
   }
 }
+*/
+
+/*
+const parent = document.getElementById("parent");
+const child = document.getElementById("child");
+parent.style.backgroundColor = "green";
+child.style.backgroundColor = " red";
+console.log(parent);
+console.log(child);
+
+parent.addEventListener(
+  "click",
+  () => {
+    console.log("prent clicked");
+  },
+  true
+);
+
+child.addEventListener("click", () => {
+  console.log("child clicked");
+});
+*/
+/*
+function abc() {
+  a = 1;
+  b = 2;
+  console.log(a);
+  console.log(b);
+}
+abc();
+
+console.log(a);
+console.log(b);
+*/
+/*
+function arry() {
+  const num = [0,10, 20, 30, 40, 50];
+  return num.filter((item) => {
+    return item < 30;
+  });
+}
+
+let result = arry();
+console.log(result);
+*/
+
+function start() {
+  let el = document.getElementById("count");
+  let btn = document.getElementById("btn");
+  let ascending = true;
+
+  btn.addEventListener("click", () => {
+    let value = parseInt(el.innerHTML);
+    if (ascending && value < 12 && value >= 0) {
+      value = value + 1;
+      el.innerHTML = value;
+      console.log(value);
+
+      if (value === 11) {
+        ascending = false;
+      }
+      console.log(el);
+    }
+
+    if (ascending === false ) {
+      console.log("deceding will hapen");
+      console.log(value)
+      value=value-1
+      el.innerHTML=value
+    }
+    if (value===0) {
+      ascending=true
+      console.log("ase wil hapen")
+    }
+  });
+}
+start();

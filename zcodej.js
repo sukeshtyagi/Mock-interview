@@ -260,6 +260,8 @@ let result = arry();
 console.log(result);
 */
 
+//ladder function
+/*
 function start() {
   let el = document.getElementById("count");
   let btn = document.getElementById("btn");
@@ -291,3 +293,9 @@ function start() {
   });
 }
 start();
+*/
+
+console.log(a);
+var a = function foo() {
+  console.log("abc");
+};

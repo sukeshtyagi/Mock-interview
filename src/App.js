@@ -3,15 +3,10 @@ function App() {
   const [selectAll, setSelectAll] = useState(0);
 
   return (
-    <input
-      type="checkbox"
-      checked={selectAll}
-      onClick={() => {
-        setSelectAll(selectAll + 1);
-        setSelectAll(selectAll + 1);
-        console.log(selectAll);
-      }}
-    />
+    <div>
+      <p>0</p>
+      <button className="btn">Update</button>
+    </div>
   );
 }
 export default App;

@@ -294,8 +294,16 @@ function start() {
 }
 start();
 */
-
+/*
 console.log(a);
-var a = function foo() {
+function a() {
   console.log("abc");
-};
+}
+*/
+console.log(typeof hello);
+
+function foo() {
+  return "hello";
+}
+const res = foo();
+console.log(res);

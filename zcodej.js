@@ -300,6 +300,8 @@ function a() {
   console.log("abc");
 }
 */
+
+/*
 console.log(typeof hello);
 
 function foo() {
@@ -307,3 +309,22 @@ function foo() {
 }
 const res = foo();
 console.log(res);
+*/
+
+var ary = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+let res = ary.filter((item) => {
+  return item > 0 && item % 2 === 0;
+});
+console.log(res);
+
+let res1 = ary.filter((item) => item < 5);
+console.log(res1);
+
+let res2 = ary.map((item) => item + "");
+console.log(res2);
+
+let res3 = res2.map((item) => {
+  return { a: item };
+});
+console.log(res3);

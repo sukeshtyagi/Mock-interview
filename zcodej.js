@@ -310,7 +310,7 @@ function foo() {
 const res = foo();
 console.log(res);
 */
-
+/*
 var ary = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 let res = ary.filter((item) => {
@@ -328,3 +328,48 @@ let res3 = res2.map((item) => {
   return { a: item };
 });
 console.log(res3);
+*/
+/*
+const btn = document.getElementById("btn");
+btn.onclick = start;
+
+function start() {
+  const el = document.getElementById("count");
+  let count = 0;
+  console.log(count);
+
+  if (count === 0) {
+    let interval = setInterval(() => {
+      count = count + 1;
+      el.innerHTML = count;
+      console.log(count);
+
+      if (count === 10) {
+        console.log("count===10");
+
+        clearInterval(interval);
+      }
+    }, 1000);
+  } else if (count === 10) {
+    let count1 = 10;
+    let interval1 = setInterval(() => {
+      el.innerHTML = count1;
+      count1 = count1 - 1;
+      console.log(count1);
+
+      if (count1 === 0) {
+        console.log("count===10");
+        clearInterval(interval1);
+      }
+    }, 1000);
+  }
+}
+*/
+
+var a = { num: 1 };
+var b = a;
+console.log(a, b);
+
+a = { c: 3 };
+
+console.log(a, b);

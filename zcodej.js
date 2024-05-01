@@ -383,6 +383,7 @@ function foo() {
 }
 foo();
 */
+/*
 let btn = document.getElementById("btn");
 console.log(btn);
 
@@ -394,3 +395,8 @@ function abc() {
     resolve("passed");
   });
 }
+*/
+
+async function foo() {}
+const res = foo();
+console.log(res);

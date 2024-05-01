@@ -374,7 +374,7 @@ a = { c: 3 };
 
 console.log(a, b);
 */
-
+/*
 function foo() {
   const x = 3;
   function x(params) {}
@@ -382,3 +382,15 @@ function foo() {
   console.log(typeof x);
 }
 foo();
+*/
+let btn = document.getElementById("btn");
+console.log(btn);
+
+btn.onclick = abc;
+
+function abc() {
+  let promise = new Promise((resolve, reject) => {
+    console.log("promise resolved");
+    resolve("passed");
+  });
+}

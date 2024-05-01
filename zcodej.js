@@ -365,7 +365,7 @@ function start() {
   }
 }
 */
-
+/*
 var a = { num: 1 };
 var b = a;
 console.log(a, b);
@@ -373,3 +373,12 @@ console.log(a, b);
 a = { c: 3 };
 
 console.log(a, b);
+*/
+
+function foo() {
+  const x = 3;
+  function x(params) {}
+  x = 1;
+  console.log(typeof x);
+}
+foo();

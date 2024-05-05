@@ -396,7 +396,15 @@ function abc() {
   });
 }
 */
-
+/*
 async function foo() {}
 const res = foo();
 console.log(res);
+*/
+
+foo();
+foo = 12;
+function foo() {
+  console.log("foo");
+}
+foo();

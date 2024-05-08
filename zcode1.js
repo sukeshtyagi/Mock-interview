@@ -416,19 +416,7 @@ const str = "hello";
 console.log(str.substr(6, 10));
 */
 
-/*
-const st = "hello world of recruiters";
-const ar = st
-  .split("")
-  .map((word) => word.split("").reverse().join(""))
-  .join(" ");
-console.log(st);
-console.log(ar);
-
-console.log(st.split("").reverse().join(""));
-*/
-
-const str = "hi i m a good student of life";
+/*const str = "hi i m a good student of life";
 const ary = str.split(" ");
 
 let a = ary.map((word) => word.charAt(0).toUpperCase() + word.substring(1));
@@ -444,3 +432,34 @@ console.log(c);
 
 let d = ary.map((word) => word.replace(/\^\w/g, (char) => char.toUpperCase()));
 console.log(d.join(" "));
+*/
+
+const st = "hello world of recruiters";
+let a = st
+  .split(" ")
+  .map((word) => word.split("").reverse().join(""))
+  .join(" ");
+console.log(a);
+
+let a1 = st.split(" ");
+let b = [];
+a1.forEach((word) => {
+  b.push(word.split("").reverse().join(""));
+});
+console.log(b.join(" "));
+
+let a2 = st.split(" ");
+console.log(a2);
+
+let w = [];
+for (let i = 0; i < a2.length; i++) {
+  let s = a2[i].split("");
+  for (let index = s.length - 1; index >= 0; index--) {
+    const element = s[index];
+    w.push(element);
+  }
+  let w1 = w.join("");
+  w.push(" ");
+  console.log(typeof w1);
+  console.log(w1);
+}

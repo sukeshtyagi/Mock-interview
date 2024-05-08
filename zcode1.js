@@ -402,9 +402,45 @@ const res = foo();
 console.log(res);
 */
 
+/*
 foo();
 foo = 12;
 function foo() {
   console.log("foo");
 }
 foo();
+*/
+
+/*
+const str = "hello";
+console.log(str.substr(6, 10));
+*/
+
+/*
+const st = "hello world of recruiters";
+const ar = st
+  .split("")
+  .map((word) => word.split("").reverse().join(""))
+  .join(" ");
+console.log(st);
+console.log(ar);
+
+console.log(st.split("").reverse().join(""));
+*/
+
+const str = "hi i m a good student of life";
+const ary = str.split(" ");
+
+let a = ary.map((word) => word.charAt(0).toUpperCase() + word.substring(1));
+console.log(ary);
+console.log(a);
+
+let b = [];
+ary.forEach((word) => b.push(word.charAt(0).toUpperCase() + word.substring(1)));
+console.log(b);
+
+let c = str.replace(/\b\w/g, (char) => char.toUpperCase());
+console.log(c);
+
+let d = ary.map((word) => word.replace(/\^\w/g, (char) => char.toUpperCase()));
+console.log(d.join(" "));
